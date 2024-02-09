@@ -1,0 +1,20 @@
+package com.task;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Logininfo extends HttpServlet {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) {
+			response.setContentType("text/html");
+			PrintWriter pw = response.getWriter();
+			String name= request.getParameter("username");
+			 String pwd =  request.getParameter("password");
+			 if(name.equals("admin")&&pwd.equals("admin")) {
+				 pw.println("Login success");
+			 }
+			 else {
+				 
+			 }
+	}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webapp>
+<servlet>
+<servlet-name>demo13</servlet-name>
+<servlet-class>com.task.Demo</servlet-class>
+</servlet>
+<servlet-mapping>
+
+</servlet-mapping>
+</webapp>

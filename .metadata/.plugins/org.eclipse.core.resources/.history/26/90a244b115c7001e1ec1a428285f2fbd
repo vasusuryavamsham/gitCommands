@@ -1,0 +1,9 @@
+package com.task;
+
+import javax.servlet.http.HttpServlet;
+
+public class SuccessServlet extends HttpServlet {
+	public void doGet(HttpServletRequest request, HttpSerevletResponse response) {
+		
+	}
+}
