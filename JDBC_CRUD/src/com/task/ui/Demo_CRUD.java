@@ -9,8 +9,10 @@ import java.util.Scanner;
 public class Demo_CRUD {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		Scanner sc=new Scanner(System.in);
+		System.out.println("\tJDBC CRUD OPERATIONS");
 		
 		while(true) {
+		System.out.println("**********************************************");
 		System.out.println("select your option");
 		System.out.println("1. insert employee data");//create
 		System.out.println("2. update employee data");//update
@@ -18,6 +20,7 @@ public class Demo_CRUD {
 		System.out.println("4  delete employee data");//delete
 		System.out.println("5  list all employees data");//show all
 		System.out.println("6  EXIT");//exit
+		System.out.println("\n**********************************************");
 		int option=sc.nextInt();
 		switch(option) {
 		case 1:
@@ -68,6 +71,7 @@ public class Demo_CRUD {
 		}
 		case 6:
 		{
+			sc.close();
 			System.out.println("Exiting the program");
 			System.exit(0);
 		}
@@ -76,6 +80,7 @@ public class Demo_CRUD {
 		System.out.println("your entered option is not match");	
 		}
 		}
+		System.out.println("\n");
 		}
 	}
 
